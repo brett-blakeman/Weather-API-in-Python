@@ -36,4 +36,6 @@ refresh_button.pack(pady=10)
 
 refresh_weather()
 
+window.bind("<Return>", lambda event: refresh_weather()) #Binds use of the enter key to refresh button
+
 window.mainloop()
